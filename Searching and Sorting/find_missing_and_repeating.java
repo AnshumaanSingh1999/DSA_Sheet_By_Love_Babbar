@@ -3,12 +3,12 @@ public class find_missing_and_repeating {
     static int[] findTwoElement(int arr[], int n) {
         int x[]=new int[2];
         HashMap<Integer, Integer> hm=new HashMap<>();
-        for(int i:arr){
-            if(hm.containsKey(i)){
-                hm.put(i, hm.get(i)+1);
+        for(int i=0;i<n;i++){
+            if(hm.containsKey(arr[i])){
+                hm.put(arr[i], hm.get(arr[i])+1);
             }
             else if(hm.containsKey(i)==false){
-                hm.put(i, 1);
+                hm.put(arr[i], 1);
             }
         }
         for(int i=1;i<=n;i++){
