@@ -7,7 +7,7 @@ public class find_missing_and_repeating {
             if(hm.containsKey(arr[i])){
                 hm.put(arr[i], hm.get(arr[i])+1);
             }
-            else if(hm.containsKey(i)==false){
+            else if(hm.containsKey(arr[i])==false){
                 hm.put(arr[i], 1);
             }
         }
