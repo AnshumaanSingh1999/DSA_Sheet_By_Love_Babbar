@@ -14,9 +14,6 @@ public class median_in_row_wise_sorted_matrix {
                 k++;
             }
         }
-        for(int i=0;i<a.length;i++){
-            System.out.println(a[i]);
-        }
         Arrays.sort(a);
         int mi=a.length/2;
         int c=a[mi];
